@@ -100,10 +100,10 @@ export function Header() {
                         <div className="navbar-wrap main-menu">
                           <ul className="navigation">
                             <li>
-                              <a href="#">Home</a>
+                              <a href="home">Home</a>
                             </li>
                             <li>
-                              <a href="#">About</a>
+                              <a href="about">About</a>
                             </li>
                             <li>
                               <a href="#">Services</a>
@@ -117,11 +117,6 @@ export function Header() {
                     </div>
                   </div>
                   <div className="main-menu-right-box-one">
-                    <div className="search-box-one">
-                      <a href="#" className="main-menu__search search-toggler">
-                        <span className="icon-search-interface-symbol" />
-                      </a>
-                    </div>
                     <div className="side-content-button-one">
                       <a className="menu-tigger" href="#">
                         <span className="line" />
