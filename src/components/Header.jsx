@@ -100,16 +100,16 @@ export function Header() {
                         <div className="navbar-wrap main-menu">
                           <ul className="navigation">
                             <li>
-                              <a href="home">Home</a>
+                              <a href="/">Home</a>
                             </li>
                             <li>
-                              <a href="about">About</a>
+                              <a href="About">About</a>
                             </li>
                             <li>
-                              <a href="#">Services</a>
+                              <a href="Service">Services</a>
                             </li>
                             <li>
-                              <a href="contact.html">contacts</a>
+                              <a href="Contact">contacts</a>
                             </li>
                           </ul>
                         </div>

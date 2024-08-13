@@ -1,4 +1,4 @@
-export default function Aboutusabout() {
+export default function Aboutus() {
   return (
     <>
       <section className="about-two about-two--about">

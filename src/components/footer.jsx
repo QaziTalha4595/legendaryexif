@@ -1,4 +1,4 @@
-export default function Footerhome() {
+export default function Footer() {
   return (
     <>
       <footer className="footer-one">

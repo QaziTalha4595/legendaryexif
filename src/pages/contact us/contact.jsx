@@ -1,18 +1,12 @@
 import { useEffect } from "preact/hooks";
-import HomeAbout from "../../section/HomeAbout";
-import Services from "../../section/Services";
-import Slider from "../../section/Slider";
-import Stats from "../../section/Stats";
-import Projects from "../../section/Projects";
-import Video from "../../section/Video";
-import Testinomials from "../../section/Testimonials";
+
+import Breadcrumbs from "../../section/Breadcrumbs";
+import ContactUS from "../../section/ContactUs";
 import CTA from "../../section/CTA";
-import Clients from "../../section/Clients";
-import Blog from "../../section/blog";
-import Footerhome from "../../components/footer";
-export function Home() {
+import GoogleMap from "../../section/Googlemap";
+export function Contact() {
   useEffect(() => {
-    document.title = "Legendary Ship Movers | Home";
+    document.title = "Legendary Ship Movers | About";
     // Function to load a script
     const loadScript = (src) => {
       return new Promise((resolve, reject) => {
@@ -43,17 +37,10 @@ export function Home() {
   }, []);
   return (
     <>
-      <Slider />
-      <Services />
-      <HomeAbout />
-      <Stats />
-      <Projects />
-      <Video />
-      <Testinomials />
+      <Breadcrumbs pageTitle={"Contact Us"} />
+      <ContactUS />
+      <GoogleMap />
       <CTA />
-      <Blog />
-      <Clients />
-      <Footerhome />
     </>
   );
 }

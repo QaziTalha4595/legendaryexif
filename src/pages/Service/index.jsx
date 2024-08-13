@@ -1,8 +1,6 @@
 import { useEffect } from "preact/hooks";
-
-import Bannerabout from "../../section/bannerabout";
-import Aboutusabout from "../../section/aboutusabout";
-export function about() {
+import Breadcrumbs from "../../section/Breadcrumbs";
+export function Service() {
   useEffect(() => {
     document.title = "Legendary Ship Movers | About";
     // Function to load a script
@@ -35,8 +33,7 @@ export function about() {
   }, []);
   return (
     <>
-      <Bannerabout />
-      <Aboutusabout />
+      <Breadcrumbs pageTitle={"Service"} />
     </>
   );
 }
