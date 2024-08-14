@@ -4,7 +4,6 @@ export default function ContactUS() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
-  const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
@@ -135,17 +134,6 @@ export default function ContactUS() {
                           name="number"
                           // @ts-ignore
                           onChange={(e) => setNumber(e.target.value)}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-6">
-                      <div className="contact-one__input-box">
-                        <input
-                          type="text"
-                          placeholder="Company"
-                          name="company"
-                          // @ts-ignore
-                          onChange={(e) => setCompany(e.target.value)}
                         />
                       </div>
                     </div>
