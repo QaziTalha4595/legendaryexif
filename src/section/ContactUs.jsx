@@ -1,4 +1,37 @@
+import React, { useState } from "react";
+import axios from "axios";
 export default function ContactUS() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const requestData = {
+      name: name,
+      email: "info@legendaryexim.com",
+      number: number,
+      message: `name: ${name} email: ${email}
+      mesaage: ${message}
+      `,
+      subject: "Query from legendary exiv website ",
+    };
+
+    axios
+      .post("https://api.graphicon.in/api/mail", requestData)
+      .then(function (response) {
+        console.log(response.data);
+        // Handle successful response
+      })
+      .catch(function (error) {
+        console.error(error);
+        // Handle error
+      });
+  };
+
   return (
     <>
       <section className="contact-one">
@@ -70,11 +103,7 @@ export default function ContactUS() {
             </div>
             <div className="col-xl-6 col-lg-12">
               <div className="contact-one__form">
-                <form
-                  id="contact-form"
-                  action="assets/inc/mail.php"
-                  method="POST"
-                >
+                <form onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="contact-one__input-box">
@@ -82,15 +111,19 @@ export default function ContactUS() {
                           type="text"
                           placeholder="Full name"
                           name="name"
+                          // @ts-ignore
+                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6">
+                    <div className="col-xl-6 col-lg=6">
                       <div className="contact-one__input-box">
                         <input
                           type="email"
                           placeholder="Email Address"
                           name="email"
+                          // @ts-ignore
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
@@ -100,6 +133,8 @@ export default function ContactUS() {
                           type="number"
                           placeholder="Mobile"
                           name="number"
+                          // @ts-ignore
+                          onChange={(e) => setNumber(e.target.value)}
                         />
                       </div>
                     </div>
@@ -109,6 +144,8 @@ export default function ContactUS() {
                           type="text"
                           placeholder="Company"
                           name="company"
+                          // @ts-ignore
+                          onChange={(e) => setCompany(e.target.value)}
                         />
                       </div>
                     </div>
@@ -118,8 +155,9 @@ export default function ContactUS() {
                       <div className="contact-one__input-box text-message-box">
                         <textarea
                           name="message"
-                          placeholder="Messege"
-                          defaultValue={""}
+                          placeholder="Message"
+                          // @ts-ignore
+                          onChange={(e) => setMessage(e.target.value)}
                         />
                       </div>
                       <div className="contact-one__btn-box">

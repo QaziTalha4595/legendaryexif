@@ -6,7 +6,7 @@ import CTA from "../../section/CTA";
 import GoogleMap from "../../section/Googlemap";
 export function Contact() {
   useEffect(() => {
-    document.title = "Legendary Ship Movers | About";
+    document.title = "Legendary Ship Movers | Contact";
     // Function to load a script
     const loadScript = (src) => {
       return new Promise((resolve, reject) => {

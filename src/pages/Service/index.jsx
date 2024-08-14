@@ -2,7 +2,7 @@ import { useEffect } from "preact/hooks";
 import Breadcrumbs from "../../section/Breadcrumbs";
 export function Service() {
   useEffect(() => {
-    document.title = "Legendary Ship Movers | About";
+    document.title = "Legendary Ship Movers | Service";
     // Function to load a script
     const loadScript = (src) => {
       return new Promise((resolve, reject) => {

@@ -21,16 +21,16 @@ export default function Footer() {
                     <div className="footer-widget__links-box">
                       <ul>
                         <li>
-                          <a href="#">Home</a>
+                          <a href="Home">Home</a>
                         </li>
                         <li>
-                          <a href="#">About</a>
+                          <a href="About">About</a>
                         </li>
                         <li>
-                          <a href="#">Services</a>
+                          <a href="Service">Services</a>
                         </li>
                         <li>
-                          <a href="#">Contacts</a>
+                          <a href="Contact">Contacts</a>
                         </li>
                       </ul>
                     </div>
