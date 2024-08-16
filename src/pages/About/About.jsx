@@ -38,7 +38,7 @@ export function About() {
     <>
       <Breadcrumbs pageTitle="About us" />
       <Aboutus />
-      <Stats />
+      <Stats /> <br />
       <CTA />
     </>
   );

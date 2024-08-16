@@ -9,7 +9,6 @@ import Testinomials from "../../section/Testimonials";
 import CTA from "../../section/CTA";
 import Clients from "../../section/Clients";
 import Blog from "../../section/blog";
-import Footerhome from "../../components/footer";
 export function Home() {
   useEffect(() => {
     document.title = "Legendary Ship Movers | Home";
@@ -53,7 +52,6 @@ export function Home() {
       <CTA />
       <Blog />
       <Clients />
-      <Footerhome />
     </>
   );
 }

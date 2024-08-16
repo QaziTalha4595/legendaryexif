@@ -8,7 +8,7 @@ export default function Slider() {
           data-wow-delay="0ms"
           data-wow-duration="1500ms"
           style={{
-            backgroundImage: "url(assets/img/slider/banner-one__mian-img.jpg)",
+            backgroundImage: "url(assets/img/slider/background12.jpg)",
           }}
         ></div>
         <div

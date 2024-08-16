@@ -13,7 +13,11 @@ export default function HomeAbout() {
                   data-wow-delay="0ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="assets/img/about/about-one__img1.jpg" alt="#" />
+                  <img
+                    src="https://img.freepik.com/premium-photo/foreign-logistic-import-export-business-concept-with-plane-containers-cargo-ship-trucks_933209-70.jpg"
+                    alt="#"
+                    style={{ width: "500px", height: "510px" }}
+                  />
                 </div>
                 <div
                   className="about-one__overlay-box text-center wow fadeInRight"

@@ -51,7 +51,7 @@
 :root {
     --thm-body-font: 'Rubik', sans-serif;
     --thm-heading-font: 'Rajdhani', sans-serif;
-    --thm-primary: #F68B21;
+    --thm-primary: #f8a62e;
     --thm-primary-rgb: 246, 139, 33;
     --thm-secondary: #1037B6;
     --thm-secondary-rgb: 16, 55, 182;
@@ -516,7 +516,7 @@ h6 a {
     right: 0px;
     opacity: 1;
     transform: scaleY(1);
-    background-color: var(--thm-primary);
+    background-color: var( --thm-secondary);
     transition-duration: 500ms;
     z-index: -1;
 }
@@ -532,7 +532,7 @@ h6 a {
     left: 0;
     right: 0px;
     content: "";
-    background: var(--thm-secondary);
+    background: var(  --thm-primary);
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     border-top-left-radius: 10px;
@@ -2574,7 +2574,7 @@ label {
 	Cta One Css
 ===============================*/
 .cta-one {
-    background-color: var(--thm-secondary);
+    background-color: var( --thm-secondary);
     padding: 80px 0px 80px;
 }
 
@@ -5027,6 +5027,7 @@ label {
     background: transparent;
     padding: 0;
     margin: 0;
+   
 }
 
 .main-header-four--v5 .navigation li {

@@ -1,5 +1,7 @@
 import { useEffect } from "preact/hooks";
 import Breadcrumbs from "../../section/Breadcrumbs";
+import LatestServices from "../../section/LatestServices";
+import CTA from "../../section/CTA";
 export function Service() {
   useEffect(() => {
     document.title = "Legendary Ship Movers | Service";
@@ -34,6 +36,8 @@ export function Service() {
   return (
     <>
       <Breadcrumbs pageTitle={"Service"} />
+      <LatestServices/>
+      <CTA/>
     </>
   );
 }

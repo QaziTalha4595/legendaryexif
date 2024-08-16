@@ -6,7 +6,7 @@ export function Header() {
   return (
     <>
       {/*Start Main Header One */}
-      <header className="main-header main-header-one">
+      <header className="main-header main-header-one ">
         <div id="sticky-header" className="menu-area">
           <div className="container">
             <div className="main-header-one__inner">
