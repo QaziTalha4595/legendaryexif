@@ -6,30 +6,33 @@ export default function ContactUS() {
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    const requestData = {
-      name: name,
-      email: "info@legendaryexim.com",
-      number: number,
-      message: `name: ${name} email: ${email}
-      mesaage: ${message}
-      `,
-      subject: "Query from legendary exiv website ",
-    };
+  //   const requestData = {
+  //     name: name,
+  //     email: "info@legendaryexim.com",
+  //     number: number,
+  //     message: `name: ${name} email: ${email}
+  //     mesaage: ${message}
+  //     `,
+  //     subject: "Query from legendary exiv website ",
+  //   };
 
-    axios
-      .post("https://api.graphicon.in/api/mail", requestData)
-      .then(function (response) {
-        console.log(response.data);
-        // Handle successful response
-      })
-      .catch(function (error) {
-        console.error(error);
-        // Handle error
-      });
-  };
+  //   axios
+  //     .post(
+  //       "https://corsanywhere.herokuapp.com/https://api.graphicon.in/api/mail",
+  //       requestData
+  //     )
+  //     .then(function (response) {
+  //       console.log(response.data);
+  //       // Handle successful response
+  //     })
+  //     .catch(function (error) {
+  //       console.error(error);
+  //       // Handle error
+  //     });
+  // };
 
   return (
     <>
@@ -102,38 +105,42 @@ export default function ContactUS() {
             </div>
             <div className="col-xl-6 col-lg-12">
               <div className="contact-one__form">
-                <form onSubmit={handleSubmit}>
+                {/* onSubmit={handleSubmit} */}
+                <form
+                  action="f49abeb6-ea94-4875-b5a5-f227804f9ef6"
+                  method="post"
+                >
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="contact-one__input-box">
+                        {/* // @ts-ignore
+                      onChange={(e) => setName(e.target.value)} */}
                         <input
                           type="text"
                           placeholder="Full name"
                           name="name"
-                          // @ts-ignore
-                          onChange={(e) => setName(e.target.value)}
                         />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg=6">
                       <div className="contact-one__input-box">
+                        {/* // @ts-ignore
+                      onChange={(e) => setEmail(e.target.value)} */}
                         <input
                           type="email"
                           placeholder="Email Address"
                           name="email"
-                          // @ts-ignore
-                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="contact-one__input-box">
+                        {/* // @ts-ignore
+                      onChange={(e) => setNumber(e.target.value)} */}
                         <input
                           type="number"
                           placeholder="Mobile"
                           name="number"
-                          // @ts-ignore
-                          onChange={(e) => setNumber(e.target.value)}
                         />
                       </div>
                     </div>
@@ -141,12 +148,9 @@ export default function ContactUS() {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="contact-one__input-box text-message-box">
-                        <textarea
-                          name="message"
-                          placeholder="Message"
-                          // @ts-ignore
-                          onChange={(e) => setMessage(e.target.value)}
-                        />
+                        {/* // @ts-ignore
+                      onChange={(e) => setMessage(e.target.value)} */}
+                        <textarea name="message" placeholder="Message" />
                       </div>
                       <div className="contact-one__btn-box">
                         <button
