@@ -133,7 +133,7 @@ export default function ContactUS() {
                         />
                       </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6">
+                    <div className="col-xl-12 col-lg-6">
                       <div className="contact-one__input-box">
                         {/* // @ts-ignore
                       onChange={(e) => setNumber(e.target.value)} */}
